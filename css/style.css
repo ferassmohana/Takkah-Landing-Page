@@ -25,7 +25,31 @@
     font-size: 1.15rem !important;
 }
 
-.about img {
-    width: 30%;
+@media (min-width: 319px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .responsive-text{
+        text-align: center;
+    }
+    .about img {
+        width: 12rem;
+        height: 12rem;
+    }
 }
-
+@media (min-width: 576px){
+    .about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .responsive-text{
+        text-align: start;
+    }
+    .about img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
